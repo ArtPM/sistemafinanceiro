@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  background: #2D4a22;
+  padding: 2rem 0 8rem;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  width: min(90vw, 800px);
+  margin: auto;
+}
+
+h2 {
+  margin: 1rem;
+}
+
+section:first-of-type {
+  margin-top: -8rem;
+}
+
+section:first-of-type h2 {
+  color: white;
+}
+  
+.card {
+  padding: 1.5rem 2rem;
+  background: white;
+  border-radius: 0.25rem;
+}
+
+.card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.card:hover {
+  background: #49AA26;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group small {
+  opacity: 0.4;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+}
+
+td.income {
+  color: #12a454;
+}
+
+td.expense {
+  color: #e92929;
+}
+
+td img:hover {
+  cursor: pointer;
+}
+
+th:first-child, td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+th:last-child, td:last-child {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+th {
+  background: gray;
+}
+ 
+td {
+  background: lightgray;
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.7;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.open-modal {
+  color: #3dd705;
+  border: #3dd705 2px solid;
+}
+
+.modal-overlay[data-state=closed] {
+  display: none;
+}
+
+.modal-overlay[data-state=open] {
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  padding: 2rem;
+  background: white;
+}
+
+input {
+  border: none;
+  padding: 0.6rem;
+}
+
+.input-group {
+  margin: 0.4rem;
+}
+
+.input-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-actions button:first-of-type {
+  background: red;
+}
+
+.input-actions button:last-of-type {
+  background: #49AA26;
+}
+
+@media (min-width:800px) {
+  .balance {
+    display: flex;
+    justify-content: space-between;
+  }
+}
